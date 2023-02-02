@@ -6,93 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<style>
-    #wrap{
-        margin-top: 21px;
-        width: 123px;
-        padding: 12px;
-        background: rgb(0, 0, 0);
-        color: rgb(30, 255, 0);
-        font-size: 25px;
-        font-weight: bold;
-    }
-</style>
 <body>
-    
-    <img src="asrama 7.jpg" alt="" width="323px">
-    
-       <div id="wrap"></div>
-  
-    <!-- <script src="main.js"></script> -->
+    <!--  -->
     <script>
-        //getElementById = untuk mengambil id tertentu pada element html
+        // =========== program hello world ===========
+            // document.writeln('hello world') 
         
-        /*
-        1. memilih id wrap 
-        2. metode innerHTML = untuk nulis konten
+        // =========== tipe data number ==============
+        //  document.writeln(123)  
+        //  document.writeln("</br>")  
+        //  document.writeln(100.321)
+
+        // ============ tipe data boolean ============
+        //    document.writeln(true)
+        //    document.writeln("</br>")
+        //    document.writeln(false)
+
+        // =========== tipe data string =============
+        /*    document.writeln('arga') 
+            document.writeln('</br>')
+            document.writeln('santri 26')
+            document.writeln('</br>')
+
+            document.writeln(  'nama : ' + 'arga') // tanda plus untuk mengabungkan 2 string
         */
 
-        // deklarasi variable
-        // -------------------
-        // nama dimulai dengan huruf atau $ atau _
-        // nama boleh mengandung huruf, angka, underscore _ dan $ dollar
-        // nama itu case sensitive
-        // Ada 'reserved words' yang tidak boleh dipakai
+        // =========== Escape Sequence ================
+        /*   document.writeln("<textarea rows='10'  cols='100'> ")
+           document.write(" santri 26 \n santri 26 \n" ) //tanda [\n ] untuk enter
+           document.write(" \\ Home santri26 \\ al i'tisham \n")  // tanda [ \\ ] untuk memberi tanda { \ }
+           document.write(" \" syarifuddin \" \n") //tanda [ \" \" ] untuk memberi tanda petik dua pada string
+           document.write(" \' syarifuddin \' \n") //tanda [ \' \' ] untuk memberi tanda petik satu pada string
+           document.writeln("</textarea>")
+        */
 
-        // var x = 123123
-
-        // tipe data string 
-        // var tes = 'arga' 
-
-        // tipe data number / angka
-        // var no = 123
-        // var no2 = 321
-
-        // var hasil = no + no2
-        // operator matematika {+ - * / % }
-        // var no = 100
-        // var no2 = 300.123123123
-
-        // var total = no * no2
-        // var total = no + no2
-        // total++ //increment //menjumlahkan dengan 1 / tambah satu
-        // no--    //decrement // mengurangi 1 
-
-        // --------- metode angka --------
-        //  toFixed(n) toString()  ramdom() min(a,b,c) max(a,b,c)
-
-        // var total = no2.toFixed(3)
-        // var total = no.toString() + no2 //mengubah angka menjadi string
-        // var no_baru = Math.random()  // ramdom() mendapatkan nomer secara ramdom atau acak
-        // var no_baru = Math.min(1,2,3)  // min() untuk mencari nila terendah
-        // var no_baru = Math.max(1,2,3)  // max() untuk mencari nila terbesar
-         
-        // lanjutan metode angka : round() "membulatkan angka terdekat" , ceil() "membulatkan angka ke atas", floor() "membulatkan angka ke bawah" , 
-        // ObjectMethods(contoh: abs, log)
-        // random spesific formula -> Math.floor(Math.random()*x)  + 1;
-        // var no_jadid = Math.floor(Math.random() * 12) + 1
+        // =========== variable =================
         
+        /* 1.variable adalah tempat untuk menyimpan data 
+           2.untuk membuat varialbe kita bisa mengunakan kata kunci (var,const,dan let) lalu di ikuti dengan nama variable nya 
+           3.variable di js tidak  harus mengunakan satu tipe data kita bisa mengubah ubah tipe data di variable yang sama
+        */
+         // var ismKamil  //ini hanya deklarasi variable 
+         // ismKamil = "syarifuddin hidayatullah" //ini adalah salah satu cara untuk mengubah value dari suatu variable
+          
+         // var namaSantri = 'furqan' // ini adalah deklarasi variable dan value/ nilai nya
+          
+         
+         //let namaSantri = 'furqan' // cara deklarasi variable dengan kata kunci let
+        // const ismSantri26 = 'ibrohim' // cara deklarasi variable dengan kata kunci const . dan variable ini value nya tidak bebas kita ubah / ganti
+        
+        // =============== operator aritmatika =============
+        /*    let hasil = 1+2
+            document.writeln("<p>1+2 = " + hasil + "</p>")
+            let total = hasil //3
 
-        // -------------  Metode string -----------------
-        // length indexof  lastIndexof search charAt
-        // toUpperCase() , toLowerCase() , replace
-        // substring(start, end), substr(start, length)
-        // parseInt parseFloat
-        // var ism = "syarifuddin hidayatullah"
+            hasil = hasil - 1 //2
+            document.writeln("<p>" + total + "-1= " +hasil+ "</p>")
+            total = hasil //2
 
-        // var result1 = ism.length // untuk menghitung jumlah string
-        // var result2 = ism.indexOf("a") // untuk mencari text tertentu di dalam sebuah stringar
-        // var hasil1 = ism.toLocaleUpperCase() //untuk menjadikan sebuah string menjadi huruf kapital huruf besar
-        // var hasil2 = ism.replace("arga", "syarifuddin") //untuk mengubah subuah string dengan string yang lain
-        var ism = "123"
-        var hasil3 = parseInt(ism) + 12  // untuk mengubah string menjadi tipe data angka
+            hasil = hasil  * 2 //4
+            document.writeln("<p>" + total + "*2= " +hasil+ "</p>")
+        */   
+
+        // =============== operator augmented assigment =============
+        /*    let hasil1 = 1+2
+            document.writeln("<p>1+2 = " + hasil1 + "</p>")
+            let total1 = hasil1 //3
+
+            hasil1 -= 1 //2
+            document.writeln("<p>" + total1 + "-1= " +hasil1+ "</p>")
+            total1 = hasil1 //2
+
+            hasil1 *= 2 //4
+            document.writeln("<p>" + total1 + "*2= " +hasil1+ "</p>")
+        */
+
+        // ============== operator Unary ======================
+        // hanya digunakan satu data saja
 
 
+        let result = +1
 
+        result--  //tanda -- untuk menurunkan  nilai
 
+        result++ //tanda ++ untuk menaikan   nilai
 
-        document.getElementById('wrap').innerHTML = hasil3
+        result = -result
+        
+        document.writeln("<p>" + result + "</p>")
+
+       
     </script>
 </body>
-</html> 
+</html>
