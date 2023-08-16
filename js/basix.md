@@ -106,3 +106,8 @@ kondisi ? if true : false
     totalSteps : 31,
 
  }
+
+
+ ==== loop ======
+
+ 
