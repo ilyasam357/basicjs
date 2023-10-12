@@ -12,8 +12,86 @@
     <script>
       // =========== program hello world ===========
       // untuk menulis text ke html / langsung tampil di browser bisa mengunakan sintax di bawah ini
-      document.writeln("hello world"); 
+      // document.writeln("hello world"); 
 
+    // ============= komentar ========== 
+    // ini komentar satu baris tidak akan di eksekusi
+
+    /* 
+        kommentar lebih dari 
+        satu baris
+    */
+
+    // ====== tipe data number =======
+    // document.writeln(12)
+    
+    
+    // === tipe data boolean ==== 
+    // document.writeln(true)
+
+    // === tipe data string ==== 
+    // document.writeln('ahlan') //string mengunakan petik satu
+    // document.writeln("arga") //string mengunakan petik dua   --
+    
+    // mengabungkan string dng string lain / concat
+    // document.writeln("Nama : " + "arga hidarta")
+
+
+    //  Kode : Escape Sequence       
+    // document.writeln("<textarea cols='100' rows='10'> " )
+    // document.write("akbar dwi\n") // \n untuk enter 
+    // document.write("\takbar dwi")  // \t untuk tab
+    // document.writeln("</textarea>" )
+
+    // ======  variable =====
+
+    // let dan const 
+    // let name = "akbar" // value atau nilai bisa di ubah
+    // name="dwi" // ini cara mengubah nilai variable
+    // document.writeln(name)
+
+    // const / atau constan (nilai tidak bisa di ubah )
+    // const nama = "Akbar Dwi Agustian"
+    // document.writeln(nama)
+
+    //  ====== operator  matematika ======
+    // operator aritmatika 
+
+    // let hasil = 10 + 20;
+    // document.writeln("<p>" + hasil + "</P>")
+    // let originalHasil = hasil
+
+    // hasil = hasil - 5
+    // document.writeln(hasil)
+
+    // operator Augmented Assignments
+    
+    // let hasil = 10;
+    // hasil += 10
+    //  document.writeln("<p>"+ hasil + "</p>")
+
+    // === Operator Unary === 
+    // let hasil = 10; //positif
+    // document.writeln("<p>" + hasil + "</p>")
+
+    // hasil ++ ; //Increment naik satu
+    // document.writeln("<p>" + hasil + "</p>")
+
+
+    // == Operator Perbandingan ==
+    // let result = 3 === "3"
+    // document.writeln("<p>" + result + "</p>")
+
+    // == Operator Logika ==
+    const nilUjian = 79
+    const nilAbsen = 79
+
+    const lulusUji = nilUjian > 75 
+    const lulusAbs = nilAbsen > 75
+
+    const lulus = lulusUji && lulusAbs
+    document.writeln("<p>" + lulus + "</p>")
+    
 
     </script>
   </body>
